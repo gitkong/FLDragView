@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="gl1-eI-JoW">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="zdg-Lc-zq5">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gl1-eI-JoW" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jKc-Yw-wPF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vyh-A2-W0J" kind="relationship" relationship="rootViewController" id="HUq-CE-yzi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hho-zm-dkq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="-558.17091454272872"/>
+        </scene>
+        <!--gitKong-->
+        <scene sceneID="Fzq-Pt-vjF">
+            <objects>
+                <viewController id="vyh-A2-W0J" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tQv-ER-9Fe"/>
+                        <viewControllerLayoutGuide type="bottom" id="37l-Lt-MrP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="y5D-aF-QmB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yvg-6V-nXb">
+                                <rect key="frame" x="0.0" y="539" width="375" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="我能出去" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ken-nS-2d8">
+                                        <rect key="frame" x="16" y="86" width="70" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="fl_canSlide" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="fl_bounces" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="fl_isAdsorb" value="NO"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.51945079110000003" green="0.81078084039999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="fl_canSlide" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="fl_bounces" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x0f-br-tS1">
+                                <rect key="frame" x="52" y="310" width="270" height="203"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="SbH-RR-cXj">
+                                        <rect key="frame" x="26" y="152" width="94" height="29"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.59499754579999997" green="0.0075699503080000003" blue="0.027000043929999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="fl_canSlide" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="fl_bounces" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="fl_isAdsorb" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </stepper>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4FQ-qR-VBW">
+                                        <rect key="frame" x="165" y="26" width="46" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.51945079110000003" green="0.81078084039999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="fl_canSlide" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="fl_bounces" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="fl_isAdsorb" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="kVY-jQ-1z1">
+                                        <rect key="frame" x="178" y="143" width="20" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="fl_canSlide" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="fl_bounces" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="fl_isAdsorb" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="fl_canSlide" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="fl_bounces" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="fl_isAdsorb" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="u=3464439138,106868108&amp;fm=85&amp;s=265468231A9211F71114090A0100E0E0.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="xCQ-fD-E76">
+                                <rect key="frame" x="52" y="134" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="fl_canSlide" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="gitKong" id="pJU-13-NNg">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="eAS-wJ-tar">
+                            <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="1uE-yB-Lrl">
+                                <rect key="frame" x="16" y="7" width="150" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="fl_canSlide" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="fl_bounces" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="fl_isAdsorb" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </segmentedControl>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="v1w-xi-3it">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="GRm-dA-K6l">
+                                <rect key="frame" x="276" y="7" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="fl_canSlide" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="fl_bounces" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="fl_isAdsorb" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QY8-om-c4P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="855" y="-420"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="u=3464439138,106868108&amp;fm=85&amp;s=265468231A9211F71114090A0100E0E0.jpeg" width="121" height="75"/>
+    </resources>
+</document>
