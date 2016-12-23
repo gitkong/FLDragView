@@ -30,7 +30,7 @@
 
 @implementation UIView (drag)
 
-static char *static_fl_canSlider = "static_fl_canSlider";
+static char *static_fl_canDrag = "static_fl_canDrag";
 static char *static_fl_bounces = "static_fl_bounces";
 static char *static_fl_adsorb = "static_fl_adsorb";
 static char *static_fl_panG = "static_fl_panG";
@@ -43,14 +43,14 @@ static NSUInteger _currentIndex;
 /**
  *  @author gitKong
  *
- *  防止先设置bounces 再设置 fl_canSlide 而重置fl_bounces的值
+ *  防止先设置bounces 再设置 fl_canDrag 而重置fl_bounces的值
  */
 BOOL _bounces = YES;
 BOOL _absorb = YES;
 
-- (void)setFl_canSlide:(BOOL)fl_canSlide{
-    objc_setAssociatedObject(self, &static_fl_canSlider, @(fl_canSlide), OBJC_ASSOCIATION_ASSIGN);
-    if (fl_canSlide) {
+- (void)setFl_canDrag:(BOOL)fl_canDrag{
+    objc_setAssociatedObject(self, &static_fl_canDrag, @(fl_canDrag), OBJC_ASSOCIATION_ASSIGN);
+    if (fl_canDrag) {
         [self fl_addPanGesture];
         self.fl_bounces = _bounces;
         self.fl_isAdsorb = _absorb;
@@ -61,8 +61,8 @@ BOOL _absorb = YES;
     }
 }
 
-- (BOOL)fl_canSlide{
-    NSNumber *flagNum = objc_getAssociatedObject(self, &static_fl_canSlider);
+- (BOOL)fl_canDrag{
+    NSNumber *flagNum = objc_getAssociatedObject(self, &static_fl_canDrag);
     return flagNum.boolValue;
 }
 
@@ -93,6 +93,7 @@ BOOL _absorb = YES;
     NSNumber *flagNum = objc_getAssociatedObject(self, &static_fl_adsorb);
     return flagNum.boolValue;
 }
+
 
 #pragma mark -- private method
 
@@ -139,7 +140,7 @@ BOOL _absorb = YES;
             break;
         }
         case UIGestureRecognizerStateEnded:{
-            
+            [self layoutIfNeeded];
             if (y < self.fl_height / 2) {
                 y = self.fl_width / 2;
             }

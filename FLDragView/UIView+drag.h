@@ -17,7 +17,7 @@
  *
  *  是否允许拖拽，默认关闭（可以在XIB或SB中设置）
  */
-@property (nonatomic,assign)IBInspectable BOOL fl_canSlide;
+@property (nonatomic,assign)IBInspectable BOOL fl_canDrag;
 /**
  *  @author gitKong
  *
