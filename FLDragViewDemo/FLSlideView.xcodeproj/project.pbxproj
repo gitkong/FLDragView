@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		112A64C01E0CC1C900277E3A /* UIView+drag.m in Sources */ = {isa = PBXBuildFile; fileRef = 112A64BF1E0CC1C900277E3A /* UIView+drag.m */; };
 		113023D91E0B6E1C006B6C98 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 113023D81E0B6E1C006B6C98 /* main.m */; };
 		113023DC1E0B6E1C006B6C98 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 113023DB1E0B6E1C006B6C98 /* AppDelegate.m */; };
 		113023DF1E0B6E1C006B6C98 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 113023DE1E0B6E1C006B6C98 /* ViewController.m */; };
@@ -15,11 +14,10 @@
 		113023E41E0B6E1C006B6C98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 113023E31E0B6E1C006B6C98 /* Assets.xcassets */; };
 		113023E71E0B6E1C006B6C98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 113023E51E0B6E1C006B6C98 /* LaunchScreen.storyboard */; };
 		113024001E0BE2A8006B6C98 /* u=3464439138,106868108&fm=85&s=265468231A9211F71114090A0100E0E0.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 113023FF1E0BE2A8006B6C98 /* u=3464439138,106868108&fm=85&s=265468231A9211F71114090A0100E0E0.jpeg */; };
+		523DA2D31BC546FA8AD0EF5C /* libPods-FLSlideView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 62CF85C0326E26BDE23714A4 /* libPods-FLSlideView.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		112A64BE1E0CC1C900277E3A /* UIView+drag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+drag.h"; sourceTree = "<group>"; };
-		112A64BF1E0CC1C900277E3A /* UIView+drag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+drag.m"; sourceTree = "<group>"; };
 		113023D41E0B6E1C006B6C98 /* FLSlideView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FLSlideView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		113023D81E0B6E1C006B6C98 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		113023DA1E0B6E1C006B6C98 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -31,6 +29,9 @@
 		113023E61E0B6E1C006B6C98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		113023E81E0B6E1C006B6C98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		113023FF1E0BE2A8006B6C98 /* u=3464439138,106868108&fm=85&s=265468231A9211F71114090A0100E0E0.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "u=3464439138,106868108&fm=85&s=265468231A9211F71114090A0100E0E0.jpeg"; sourceTree = "<group>"; };
+		5AD13C3FC706FA055182EDD5 /* Pods-FLSlideView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLSlideView.release.xcconfig"; path = "Pods/Target Support Files/Pods-FLSlideView/Pods-FLSlideView.release.xcconfig"; sourceTree = "<group>"; };
+		62CF85C0326E26BDE23714A4 /* libPods-FLSlideView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FLSlideView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		657656C6764C1CD11481A0A8 /* Pods-FLSlideView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLSlideView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FLSlideView/Pods-FLSlideView.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,26 +39,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				523DA2D31BC546FA8AD0EF5C /* libPods-FLSlideView.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		112A64BD1E0CC1C900277E3A /* UIView+drag */ = {
-			isa = PBXGroup;
-			children = (
-				112A64BE1E0CC1C900277E3A /* UIView+drag.h */,
-				112A64BF1E0CC1C900277E3A /* UIView+drag.m */,
-			);
-			path = "UIView+drag";
-			sourceTree = "<group>";
-		};
 		113023CB1E0B6E1B006B6C98 = {
 			isa = PBXGroup;
 			children = (
 				113023D61E0B6E1C006B6C98 /* FLSlideView */,
 				113023D51E0B6E1C006B6C98 /* Products */,
+				14A1C8A3A9EDA8951E6C291D /* Pods */,
+				DC4ECB2F1ED36C13B135CB61 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,7 +67,6 @@
 		113023D61E0B6E1C006B6C98 /* FLSlideView */ = {
 			isa = PBXGroup;
 			children = (
-				112A64BD1E0CC1C900277E3A /* UIView+drag */,
 				113023DA1E0B6E1C006B6C98 /* AppDelegate.h */,
 				113023DB1E0B6E1C006B6C98 /* AppDelegate.m */,
 				113023DD1E0B6E1C006B6C98 /* ViewController.h */,
@@ -95,6 +89,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		14A1C8A3A9EDA8951E6C291D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				657656C6764C1CD11481A0A8 /* Pods-FLSlideView.debug.xcconfig */,
+				5AD13C3FC706FA055182EDD5 /* Pods-FLSlideView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DC4ECB2F1ED36C13B135CB61 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				62CF85C0326E26BDE23714A4 /* libPods-FLSlideView.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -102,9 +113,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 113023EB1E0B6E1C006B6C98 /* Build configuration list for PBXNativeTarget "FLSlideView" */;
 			buildPhases = (
+				0436FACFD487DB2D63936CB7 /* [CP] Check Pods Manifest.lock */,
 				113023D01E0B6E1B006B6C98 /* Sources */,
 				113023D11E0B6E1B006B6C98 /* Frameworks */,
 				113023D21E0B6E1B006B6C98 /* Resources */,
+				A2A7C72A08F1EE95346D954A /* [CP] Embed Pods Frameworks */,
+				5053AF2E04EC785B1572137B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -163,6 +177,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0436FACFD487DB2D63936CB7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5053AF2E04EC785B1572137B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FLSlideView/Pods-FLSlideView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2A7C72A08F1EE95346D954A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FLSlideView/Pods-FLSlideView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		113023D01E0B6E1B006B6C98 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -170,7 +232,6 @@
 			files = (
 				113023DF1E0B6E1C006B6C98 /* ViewController.m in Sources */,
 				113023DC1E0B6E1C006B6C98 /* AppDelegate.m in Sources */,
-				112A64C01E0CC1C900277E3A /* UIView+drag.m in Sources */,
 				113023D91E0B6E1C006B6C98 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +348,7 @@
 		};
 		113023EC1E0B6E1C006B6C98 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 657656C6764C1CD11481A0A8 /* Pods-FLSlideView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = GB8FE8WWF8;
@@ -300,6 +362,7 @@
 		};
 		113023ED1E0B6E1C006B6C98 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AD13C3FC706FA055182EDD5 /* Pods-FLSlideView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = GB8FE8WWF8;
