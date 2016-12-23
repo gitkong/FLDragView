@@ -12,9 +12,11 @@ Pod::Spec.new do |s|
 
   s.author             = { "gitkong" => "13751855378@163.com" }
 
+  s.platform     = :ios
+
   s.source       = { :git => "https://github.com/gitkong/FLDragView", :tag => "#{s.version}" }
 
-  s.source_files  = "UIView+drag/*.{h,m}”
+  s.source_files  = "FLDragView/*.{h,m}"
 
 
 end
