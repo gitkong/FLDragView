@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "UIView+drag.h"
+#import "FLView.h"
 @interface ViewController ()
 
 @property (nonatomic,weak)UIView *firstView;
@@ -47,7 +48,7 @@
     view2.fl_isAdsorb = YES;
     [view1 addSubview:view2];
     
-    UIView *view3 = [[UIView alloc] initWithFrame:CGRectMake(250, 0, 50, 50)];
+    FLView *view3 = [[FLView alloc] initWithFrame:CGRectMake(250, 0, 50, 50)];
     view3.backgroundColor = [UIColor greenColor];
     
     view3.fl_canSlide = YES;

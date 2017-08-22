@@ -14,6 +14,7 @@
 		113023E41E0B6E1C006B6C98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 113023E31E0B6E1C006B6C98 /* Assets.xcassets */; };
 		113023E71E0B6E1C006B6C98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 113023E51E0B6E1C006B6C98 /* LaunchScreen.storyboard */; };
 		113024001E0BE2A8006B6C98 /* u=3464439138,106868108&fm=85&s=265468231A9211F71114090A0100E0E0.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 113023FF1E0BE2A8006B6C98 /* u=3464439138,106868108&fm=85&s=265468231A9211F71114090A0100E0E0.jpeg */; };
+		3F617BB81F4C36EB009987B2 /* FLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F617BB71F4C36EB009987B2 /* FLView.m */; };
 		523DA2D31BC546FA8AD0EF5C /* libPods-FLSlideView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 62CF85C0326E26BDE23714A4 /* libPods-FLSlideView.a */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,8 @@
 		113023E61E0B6E1C006B6C98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		113023E81E0B6E1C006B6C98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		113023FF1E0BE2A8006B6C98 /* u=3464439138,106868108&fm=85&s=265468231A9211F71114090A0100E0E0.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "u=3464439138,106868108&fm=85&s=265468231A9211F71114090A0100E0E0.jpeg"; sourceTree = "<group>"; };
+		3F617BB61F4C36EB009987B2 /* FLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLView.h; sourceTree = "<group>"; };
+		3F617BB71F4C36EB009987B2 /* FLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLView.m; sourceTree = "<group>"; };
 		5AD13C3FC706FA055182EDD5 /* Pods-FLSlideView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLSlideView.release.xcconfig"; path = "Pods/Target Support Files/Pods-FLSlideView/Pods-FLSlideView.release.xcconfig"; sourceTree = "<group>"; };
 		62CF85C0326E26BDE23714A4 /* libPods-FLSlideView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FLSlideView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		657656C6764C1CD11481A0A8 /* Pods-FLSlideView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLSlideView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FLSlideView/Pods-FLSlideView.debug.xcconfig"; sourceTree = "<group>"; };
@@ -71,6 +74,8 @@
 				113023DB1E0B6E1C006B6C98 /* AppDelegate.m */,
 				113023DD1E0B6E1C006B6C98 /* ViewController.h */,
 				113023DE1E0B6E1C006B6C98 /* ViewController.m */,
+				3F617BB61F4C36EB009987B2 /* FLView.h */,
+				3F617BB71F4C36EB009987B2 /* FLView.m */,
 				113023E01E0B6E1C006B6C98 /* Main.storyboard */,
 				113023FF1E0BE2A8006B6C98 /* u=3464439138,106868108&fm=85&s=265468231A9211F71114090A0100E0E0.jpeg */,
 				113023E31E0B6E1C006B6C98 /* Assets.xcassets */,
@@ -190,7 +195,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		5053AF2E04EC785B1572137B /* [CP] Copy Pods Resources */ = {
@@ -230,6 +235,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F617BB81F4C36EB009987B2 /* FLView.m in Sources */,
 				113023DF1E0B6E1C006B6C98 /* ViewController.m in Sources */,
 				113023DC1E0B6E1C006B6C98 /* AppDelegate.m in Sources */,
 				113023D91E0B6E1C006B6C98 /* main.m in Sources */,
